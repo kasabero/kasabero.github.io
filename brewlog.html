@@ -3,4 +3,14 @@ layout: default
 title: Brewlog
 ---
 
-<h1 class="page=header">Brewing Log</h1>
+<br/>
+<p class="lead">Brewing Log</p>
+
+{% for post in site.posts %}
+<div class="panel panel-default">
+<div class="panel-heading"><h4 class="panel-title">{{ post.title }} &nbsp; <small>Posted {{ post.date | date_to_string }}</small></h4></div>
+<div class="panel-body">
+{{ post.content }}
+</div>
+</div>
+{% endfor %}
