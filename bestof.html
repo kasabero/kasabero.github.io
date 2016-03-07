@@ -3,6 +3,34 @@ layout: default
 title: Now serving
 ---
 
+<script>
+function findBrew() {
+	 var cap = document.getElementById("brewSearch").placeholder; 
+    var x = document.getElementById(cap);
+    document.getElementById("beer").innerHTML = x;
+}
+</script>
+
+<input type="search" id="brewSearch" placeholder="Find by cap">
+<button onclick="findBrew()">Find it!</button>
+
+<p id="beer">
+</p>
+
+<hr/><hr/>
+
+<div id="sm">
+<b>Sea Monster</b> 
+<br/>
+<i>Brett IPA, approximately % ABV</i>
+<br/>
+<i>Kasabero Batch </i>
+<br/><br/>
+<p>
+</p>
+<hr/>
+</div>
+
 <br/>
 <p class="lead">Now serving!</p>
 
