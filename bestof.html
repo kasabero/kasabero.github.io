@@ -6,8 +6,8 @@ title: Now serving
 <script>
 function findBrew() {
 	 var cap = document.getElementById("brewSearch").placeholder; 
-    var x = document.getElementById(cap);
-    document.getElementById("beer").innerHTML = x;
+    var elt = document.getElementById(cap);
+    elt.style.display = '';
 }
 </script>
 
@@ -19,7 +19,7 @@ function findBrew() {
 
 <hr/><hr/>
 
-<div id="sm">
+<div id="sm" style="display:none">
 <b>Sea Monster</b> 
 <br/>
 <i>Brett IPA, approximately % ABV</i>
